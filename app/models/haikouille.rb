@@ -1,0 +1,2 @@
+class Haikouille < ApplicationRecord
+end

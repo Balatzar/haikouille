@@ -1,0 +1,15 @@
+<h1>Haikouilles <button id="showModal">new</button></h1>
+
+<div id="masonry-container">
+  <% @haikouilles.each do |haikouille| %>
+    <%= render haikouille %>
+  <% end %>
+</div>
+
+
+<div id="createHaikouille" class="modal">
+  <div class="modal-content">
+    <span id="close">&times;</span>
+    <%= render 'form', haikouille: Haikouille.new %>
+  </div>
+</div>
