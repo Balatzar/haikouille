@@ -1,26 +1,24 @@
 <%= form_with(model: haikouille, local: true, html: {id: "new_haikouille"}) do |form| %>
 
   <div class="field">
-    <%= form.label :title %>
-    <%= form.text_field :title, id: :haikouille_title %>
+    <%= form.label :title, "Titre" %>
+    <%= form.text_field :title, id: :haikouille_title, placeholder: "ex: Couilles tomates" %>
   </div>
 
   <div class="field">
-    <%= form.label :first %>
-    <%= form.text_field :first, id: :haikouille_first, class: "js-paragraph" %>
+    <%= form.label :title, "Haikouille" %>
+    <%= form.text_field :first, id: :haikouille_first, placeholder: "ex: Les couilles tomates vertes", class: "js-paragraph" %>
   </div>
 
   <div class="field">
-    <%= form.label :second %>
-    <%= form.text_field :second, id: :haikouille_second, class: "js-paragraph" %>
+    <%= form.text_field :second, id: :haikouille_second, placeholder: "ex: Au printemps fleurissent et meurent", class: "js-paragraph" %>
   </div>
 
   <div class="field">
-    <%= form.label :third %>
-    <%= form.text_field :third, id: :haikouille_third, class: "js-paragraph" %>
+    <%= form.text_field :third, id: :haikouille_third, placeholder: "ex: Un parfum d'ivresse", class: "js-paragraph" %>
   </div>
 
   <div class="actions">
-    <%= form.submit data: { disable_with: false } %>
+    <%= form.submit "Créer haikouille", data: { disable_with: false } %>
   </div>
 <% end %>

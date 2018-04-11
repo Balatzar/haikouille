@@ -1,3 +1,5 @@
+$break-phones: 780px;
+
 h1 {
   text-align: center;
 }
@@ -9,7 +11,7 @@ h1 {
 .haikouille {
   border: 1px solid black;
   min-width: 200px;
-  height: 200px;
+  height: 150px;
   margin-bottom: 30px;
   padding: 20px;
 
@@ -37,9 +39,14 @@ h1 {
   padding: 20px;
   border: 1px solid #888;
   width: 50%;
+  @media screen and (max-width: $break-phones) {
+    width: 90%;
+    border: none;
+    margin: 50% auto;
+  }
 }
 
-.close {
+#close {
   color: #aaa;
   float: right;
   font-size: 28px;
