@@ -4,7 +4,7 @@ class HaikouillesController < ApplicationController
   # GET /haikouilles
   # GET /haikouilles.json
   def index
-    @haikouilles = Haikouille.all
+    @haikouilles = Haikouille.all.order("created_at desc")
   end
 
   # GET /haikouilles/1
